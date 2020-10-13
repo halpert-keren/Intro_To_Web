@@ -1,0 +1,277 @@
+* { margin: 0; padding: 0;}
+
+body, nav, main, footer {display: block;}
+
+body {
+    font-family: 'Kalam', cursive;
+    background-color: #fcbf29;
+}
+
+
+body::-webkit-scrollbar {
+    width: 10px;
+    background: #cb9920;
+ }
+ 
+body::-webkit-scrollbar-track {
+    background: #cb9920;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border-radius: 30px;
+}
+
+.wrapper {
+    width: 90%;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav svg {
+    transform: translateY(-300px);
+    animation-name: popup;
+    animation-duration: 900ms;
+}
+
+nav svg:hover {
+    transform: translateY(-160px);
+    animation: popdown 1200ms 0s linear 1 alternate;
+}
+
+@keyframes popdown {
+    from { transform: translateY(-300px); }    
+    to   { transform: translateY(-160px); }
+}
+
+@keyframes popup {
+    from { transform: translateY(-160px); }    
+    to   { transform: translateY(-300px); }
+}
+
+.contact {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    min-height: 600px;
+}
+
+.contact svg {
+    position: absolute;
+    top: 500px;
+    z-index: -1;
+}
+
+form {
+    position: absolute;
+    top: 585px;
+    height: 820px;
+    width: 330px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    font-family: 'Rock Salt', cursive;
+}
+
+form section {
+    height: 500px;
+    width: 330px; 
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+form div {
+    display: flex;
+    justify-content: center;
+}
+
+form label {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+form input{
+    background: none;
+    border: none;
+    height: 30px;
+    font-family: 'Rock Salt', cursive;
+    font-size: 18px;
+    padding-left: 12px;
+}
+
+form textarea {
+    background: none;
+    border: none;
+    height: 120px;
+    padding-top: 30px;
+    padding-left: 12px;
+    font-family: 'Rock Salt', cursive;
+    font-size: 18px;
+    line-height: 22px;
+    transform: rotate(4deg);
+}
+
+form input:focus, form textarea:focus {
+    border: none;
+    outline: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+form div input {
+    height: 75px;
+    width: 140px;
+    background: url(../images/send.png) center no-repeat;
+    cursor: pointer;
+}
+
+
+.CV, .about {
+    width: 80%;
+    align-self: center;
+    position: absolute;
+    top: 550px;
+    min-height: 1600px;
+    font-size: 18px;
+}
+
+.CV div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.CV div a {
+    text-decoration: none;
+    color: #ca9920;
+    border: 3px solid #fcd77e;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    font-size: 22px;
+}
+
+.projs {
+    position: absolute;
+    top: 550px;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.projs a {
+    display: flex;
+    margin-right: 100px;
+    text-decoration: none;
+    font-size: 30px;
+    color: rgb(255, 255, 255, 0);
+    text-align: center;
+    height: 360px;
+    width: 360px;
+}
+
+.projs a:hover div {
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.6);
+    color: rgb(255, 255, 255, 1);
+}
+
+.projs a div {
+    display: flex;
+    height: 360px;
+    width: 360px;
+}
+
+.projs a img {
+    z-index: -1;
+    position: absolute;
+    display: flex;
+}
+
+.projs a article {
+    margin: 20px;
+}
+
+.projs a svg {
+    position: absolute;
+}
+
+.about {
+    top: 560px;
+    min-height: 1200px;
+    line-height: 40px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    height: 70px;
+    width: 100%;
+    background-color: #cb9920;
+    display: flex;
+    align-items: center;
+}
+
+footer p {
+    align-self: center;
+}
+
+footer div {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+footer ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+footer ul li {
+    display: flex;
+}
+
+footer #logo {
+    width: 40px;
+    height: 40px;
+    background: url(../images/logo.png) center no-repeat;
+}
+
+footer .mail {
+    width: 40px;
+    height: 40px;
+    background: url(../images/mail.png) center no-repeat;
+}
+
+footer .facebook {
+    width: 40px;
+    height: 40px;
+    background: url(../images/Facebook.png) center no-repeat;
+}
+
+footer .github {
+    width: 40px;
+    height: 40px;
+    background: url(../images/Github.png) center no-repeat;
+}
+
+footer .linkedin {
+    width: 40px;
+    height: 40px;
+    background: url(../images/Linkedin.png) center no-repeat;
+}

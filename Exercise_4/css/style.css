@@ -1,0 +1,325 @@
+* { margin: 0; padding: 0; }
+
+body    {
+    background-color: #73ceffff;
+    overflow-y: hidden;
+    zoom: 0.5;
+}
+
+.content    {
+    display: flex;
+    position: relative;
+}
+
+.background svg{
+    position: absolute;
+    position: fixed;
+}
+
+.arrows{
+    width: 10950px;
+    position: fixed;
+    margin-top: 1050px;
+}
+
+.arrows svg{
+    margin-left: 100px;
+    animation-name: arrows;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes arrows{
+    from{ margin-left: 0px;}
+    to {margin-left: 100px;}
+}
+
+main    {
+    position: absolute;
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 12300px;
+    height: 1099px;
+}
+
+section {
+    border: 10px solid #414141;
+    border-radius: 10px;
+    width: 800px;
+    height: 800px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: backissue;
+    font-size: 60px;
+    background-color: #ffffff;
+}
+
+section svg {
+    position: absolute;
+}
+
+section article {
+    position: absolute;
+    width: 800px;
+    color: #ffffff;
+}
+
+input, textarea  {
+    box-sizing: border-box;
+    border:none;
+    background-color: transparent;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+}
+
+.box1 article  svg {
+    margin-left: -70px;
+    margin-top: -100px;
+}
+
+.box1 input {
+    padding-left: 10px;
+    transform: rotate(-14deg);
+    margin-top: 162px;
+    margin-left: 265px;
+    width: 230px;
+    height: 70px;
+    font-size: 80px;
+    font-family: badaboom;
+    letter-spacing: 8px;
+    color: #db21d9ff;
+    border:none;
+}
+
+
+.box2 article  svg {
+    margin-left: -15px;
+    margin-top: -15px;
+}
+
+.box2 input {
+    padding-left: 10px;
+    transform: rotate(-25deg);
+    margin-top: 165px;
+    margin-left: 345px;
+    width: 230px;
+    height: 70px;
+    font-size: 80px;
+    font-family: badaboom;
+    letter-spacing: 8px;
+    color: #db21d9ff;
+    border:none;
+}
+
+.box3 article  svg {
+    margin-left: -55px;
+    margin-top: 20px;
+}
+
+.box3 input {
+    padding-left: 20px;
+    transform: rotate(-8deg);
+    margin-top: 320px;
+    margin-left: 480px;
+    width: 310px;
+    height: 70px;
+    font-size: 42px;
+    font-family: badaboom;
+    letter-spacing: 8px;
+    color: #db21d9ff;
+    border:none;
+}
+
+.box4 article  svg {
+    margin-left: -55px;
+    margin-top: 20px;
+}
+
+.box4 article div {
+    margin-top: 90px;
+    margin-left: -40px;
+    transform: rotate(-40deg)
+}
+
+.box4 input {
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.box5 article  svg {
+    margin-left: -55px;
+    margin-top: -5px;
+}
+
+.box5 select {
+    padding-left: 15px;
+    transform: rotate(-12deg);
+    margin-top: 650px;
+    margin-left: 500px;
+    width: 210px;
+    height: 50px;
+    font-size: 40px;
+    font-family: badaboom;
+    letter-spacing: 8px;
+    color: #db21d9ff;
+    border:none;
+}
+
+.box6 article  svg {
+    margin-left: -70px;
+    margin-top: -5px;
+}
+
+.box6 input {
+    padding-left: 15px;
+    transform: rotate(-2deg);
+    margin-top: 470px;
+    margin-left: 560px;
+    width: 110px;
+    height: 50px;
+    font-size: 40px;
+    font-family: badaboom;
+    letter-spacing: 8px;
+    color: #db21d9ff;
+    border-bottom: 4px solid #000000;
+}
+
+.box7 article  svg {
+    margin-left: -60px;
+    margin-top: 30px;
+}
+
+.box7 input {
+    padding-left: 15px;
+    transform: rotate(-20deg);
+    margin-top: 465px;
+    margin-left: 460px;
+    width: 310px;
+    height: 50px;
+    font-size: 40px;
+    font-family: badaboom;
+    letter-spacing: 8px;
+    color: #db21d9ff;
+}
+
+.box8 article svg {
+    margin-left: -60px;
+    margin-top: -40px;
+}
+
+.box8 input {
+    padding: -50px;
+    transform: rotate(0deg);
+    width: 30px;
+    height: 30px;
+}
+
+.box8 article div   {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    margin-top: 490px;
+    margin-left: 290px;
+}
+
+
+.box9 article  svg {
+    margin-left: -60px;
+    margin-top: -50px;
+}
+
+.box9 input {
+    padding-left: 5px;
+    padding-right: 5px;
+    transform: rotate(0deg);
+    margin-top: 565px;
+    margin-left: 497px;
+    width: 100px;
+    height: 50px;
+}
+
+.box10 article  svg {
+    margin-left: -60px;
+    margin-top: 20px;
+}
+
+.box10 textarea {
+    padding-left: 15px;
+    transform: rotate(-20deg);
+    margin-top: 615px;
+    margin-left: 530px;
+    width: 280px;
+    height: 50px;
+    font-size: 40px;
+    font-family: badaboom;
+    letter-spacing: 8px;
+    color: #db21d9ff;
+}
+
+.box11 article  svg {
+    margin-left: -60px;
+    margin-top: 30px;
+}
+
+.box11 input {
+    padding-left: 15px;
+    transform: rotate(5deg);
+    margin-top: 485px;
+    margin-left: 580px;
+    width: 270px;
+    height: 50px;
+    font-size: 40px;
+    font-family: badaboom;
+    letter-spacing: 8px;
+    color: #db21d9ff;
+}
+
+.box12 article  svg {
+    margin-left: -60px;
+    margin-top: 30px;
+}
+
+.box12 input {
+    transform: rotate(-6deg);
+    margin-top: 470px;
+    margin-left: 150px;
+    width: 370px;
+    height: 150px;
+    font-size: 70px;
+    font-family: badaboom;
+    letter-spacing: 8px;
+    color: #db21d9ff;
+    cursor: pointer;
+}
+
+@font-face  {
+    font-family: badaboom;
+    src: url(../fonts/BADABB__.woff);
+}
+
+@font-face  {
+    font-family: backissue;
+    font-weight: normal;
+    font-style: normal;
+    src: url(../fonts/BackIssuesBB_reg.woff);
+}
+
+@font-face  {
+    font-family: backissue;
+    font-weight: bold;
+    font-style: italic;
+    src: url(../fonts/BackIssuesBB_boldital.woff);
+}
+
+@font-face  {
+    font-family: backissue;
+    font-weight: normal;
+    font-style: italic;
+    src: url(../fonts/BackIssuesBB_ital.woff);
+}
